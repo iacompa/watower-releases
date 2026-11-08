@@ -2,9 +2,9 @@
 
 This repository hosts release downloads. The app's source is available in the separately uploaded archives below. GitHub's automatic source downloads contain this hosting repository, not the app.
 
-## Watower 1.2
+## Watower 1.3
 
-Download [Watower-1.2.0-source.tar.gz](https://github.com/iacompa/watower-releases/releases/download/v1.2.0/Watower-1.2.0-source.tar.gz) and [SHA256SUMS.txt](https://github.com/iacompa/watower-releases/releases/download/v1.2.0/SHA256SUMS.txt) from the [1.2 release](https://github.com/iacompa/watower-releases/releases/tag/v1.2.0).
+Download [Watower-1.3.0-source.tar.gz](https://github.com/iacompa/watower-releases/releases/download/v1.3.0/Watower-1.3.0-source.tar.gz) and [SHA256SUMS.txt](https://github.com/iacompa/watower-releases/releases/download/v1.3.0/SHA256SUMS.txt) from the [1.3 release](https://github.com/iacompa/watower-releases/releases/tag/v1.3.0).
 
 The archive supplies matching complete source for the shipped macOS arm64 application and CLI. It includes:
 
@@ -18,15 +18,19 @@ The archive supplies matching complete source for the shipped macOS arm64 applic
 Verify the downloaded source archive against its line in `SHA256SUMS.txt`:
 
 ```sh
-shasum -a 256 Watower-1.2.0-source.tar.gz
-tar -xzf Watower-1.2.0-source.tar.gz
+shasum -a 256 Watower-1.3.0-source.tar.gz
+tar -xzf Watower-1.3.0-source.tar.gz
 ```
 
-Inside the extracted archive, read `CORRESPONDING_SOURCE.md` and the detailed guide at `release/v1.2.0/CORRESPONDING_SOURCE.md`. Those files describe dependency provenance, source verification, build prerequisites, and rebuild commands.
+Inside the extracted archive, read `CORRESPONDING_SOURCE.md` and the detailed guide at `release/v1.3.0/CORRESPONDING_SOURCE.md`. Those files describe dependency provenance, source verification, build prerequisites, and rebuild commands.
 
 Rebuilding requires macOS, Xcode tools and the platform SDK, Rust 1.96.0, Node.js, and pnpm 11.5.1. General-purpose unmodified compilers, SDKs, package managers, and build tools remain prerequisites. Fetching frontend build tools can require network access. The package does not claim a fully offline frontend tool installation.
 
 Apple signing and notarization credentials are unnecessary to compile or modify the program. Signed or notarized artifacts are not guaranteed to rebuild byte for byte.
+
+## Historical Watower 1.2
+
+The [1.2 release](https://github.com/iacompa/watower-releases/releases/tag/v1.2.0) retains its original binaries, matching source archive and checksums unchanged. Its source archive contains the release-specific build and dependency guide.
 
 ## Historical Watower 1.1
 
